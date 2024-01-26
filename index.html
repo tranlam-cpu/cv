@@ -3,9 +3,89 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>cv</title>
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./src/output.css" /> 
+	<link rel="stylesheet" href="./src/style.css" /> 
 </head>
 <body>
-sadads
+	<header class="sticky top-0 px-20 w-full head flex items-center justify-between h-40 border-b-2">
+		<div class="font-bold text-2xl"><span>🧑‍  </span>T.Lam-CPU</div>
+		<div class="hover:text-sky-600 cursor-pointer"><span>📮 </span>Email me</div>
+	</header>
+	<section class="doc-container flex flex-col sm:flex-row">
+		<div class="w-4/12 h-screen border-r-2">
+			<div class="side-bar pt-12 px-7 float-end">	
+				<div>
+					<a class="sub-btn uppercase font-bold text-2xl">📁 ABOUT ME <i class="drop-down float-end fa fa-angle-left mx-3"></i></a>
+					<div class="pt-4 pl-7 sub-menu">
+						<div class="antialiased">
+						<i class="fa fa-birthday-cake me-2"></i>   22-11-1996</div>
+
+						<div class="antialiased">
+						<i class="fa fa-map-marker me-2"></i>  Phường 3, Tp. Vĩnh Long, Vĩnh Long</div>
+						
+						
+					</div>		
+				</div>
+
+				<hr class="hr"/>
+
+				<div>
+					<a class="sub-btn uppercase font-bold text-2xl">📁 Đề tài <i class="drop-down float-end fa fa-angle-left mx-3"></i></a>
+					<div class="pt-4 pl-7 sub-menu">
+						<div class="antialiased">
+						<i class="fa fa-birthday-cake me-2"></i>   22-11-1996</div>
+
+						<div class="antialiased">
+						<i class="fa fa-map-marker me-2"></i>  Phường </div>
+						
+						
+					</div>
+				</div>
+
+				<hr class="hr"/>
+			</div>
+			</div>
+			
+		</div>
+		<main class="w-8/12">
+			<div class="pt-12 px-7 float-start">
+				<p>👋 xin chào!</p>
+			</div>
+		</main>
+	</section>
 </body>
+<script type="text/javascript">
+	 $(document).ready(function() {
+            function handleScroll() {
+	            // Get the current vertical scroll position
+	            var scrollPosition = window.pageYOffset;
+
+	            if(scrollPosition>0){
+	            	$('.head').addClass('head-scroll')
+	            }else{
+	            	$('.head').removeClass('head-scroll')
+	            }
+	        }
+
+	        // Attach the handleScroll function to the scroll event
+	        window.addEventListener("scroll", handleScroll);
+        });
+</script>
+
+<script>
+       
+    window.addEventListener("load",function(){
+
+        $('.sub-btn').click(function () {
+
+            $(this).find('.drop-down').toggleClass('rotate');
+           
+            $(this).next('.sub-menu').toggleClass('block')
+
+        });
+    })
+</script>
 </html>
