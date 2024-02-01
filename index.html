@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header class="sticky top-0 px-20 w-full head flex items-center justify-between h-40 border-b-2">
-		<div class="font-bold text-2xl"><span>🧑‍  </span>T.Lam-CPU</div>
+		<div class="font-bold text-2xl"><a href="/cv"><span>🧑‍  </span>T.Lam-CPU</a></div>
 		<div class="hover:text-sky-600 cursor-pointer"><span>📮 </span><a href="mailto:lam.tran.113520@gmail.com" target="_top">Email me</a></div>
 	</header>
 
@@ -48,10 +48,10 @@
 				<div>
 					<a class="sub-btn uppercase font-bold text-2xl">📁 product <i class="drop-down float-end rotate fa fa-angle-left mx-3"></i></a>
 					<div class="pt-4 pl-7 sub-menu">
-						<div class="antialiased">
+						<div content="test.html" class="products antialiased">
 						  sadsađâsd</div>
 
-						<div class="antialiased">
+						<div content="" class="products antialiased">
 						sadsadsda </div>
 						
 						
@@ -192,8 +192,8 @@
 </script>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		const htmlFilePath = "./view/test.html";
+	$(document).on('click','.products',function(){
+		const htmlFilePath = `./view/${$(this).attr("content")}`;
 		var xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
@@ -202,7 +202,6 @@
             };
         xhr.open("GET", htmlFilePath, true);
         xhr.send();
-		
 	})
 	
 </script>
