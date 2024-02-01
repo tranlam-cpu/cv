@@ -18,16 +18,31 @@ body{
 .doc-container{
 	width:100%;
 	margin-top: 160px;
-	
 }
-.side-bar{
-	overflow-y: auto;
+#menu-scroll{
+	transition: all 0.4s ease-in;
+}
+.menu-scroll{
+	margin-top: -60px;
+	transition: all 0.4s ease-out;
+}
+.left-content{
+	min-height: 90vh;
+}
+.right-content{
+	min-height: 90vh;
+}
 
+.side-bar{
+	height: 100%;
+	position: fixed;
+	right: 66.79%;
+	overflow-y: auto;
 }
 .sub-menu {
 	color: #2A2A2A;
 	font-size: 18px;
-	display: none;
+	display: block;
     cursor: pointer;
     text-decoration: none;
 }
@@ -35,7 +50,7 @@ body{
 	line-height: 36px;
 }
 .block{
-	display: block;
+	display: none;
 }
 
 .rotate{
@@ -52,4 +67,61 @@ body{
 	margin-top: 15px;
 	margin-bottom:15px;
 	border: 1px solid black;
+}
+.mark{
+	font-family: 'Patrick Hand', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    margin-inline-start: 20px;
+    margin-inline-end: 0px;
+}
+
+.image{
+	max-width: 100%;
+	text-align: center;
+	margin: 40px auto;	
+}
+.helper{
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.helper img{
+	border-radius: 50%;
+	vertical-align:middle;
+	width:400px;
+	height: 400px;
+	object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+.title{
+	font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.content{
+	font-size: 22px;
+    font-weight: 600;
+}
+.bg-img{
+	position:absolute;
+	top: 250px;
+	right: 80px;
+	width: 200px;
+	object-fit:cover;
+}
+
+@media (max-width: 640px) { 
+	.mark{
+	    font-size: 30px;
+	}
 }

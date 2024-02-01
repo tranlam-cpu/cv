@@ -3,22 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>cv</title>
+	<title>portfolio</title>
 	<script src="./src/jquery.min.js"></script>
+	<script src="./src/flowbite.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./src/output.css" /> 
 	<link rel="stylesheet" href="./src/style.css" /> 
+	
 </head>
 <body>
 	<header class="sticky top-0 px-20 w-full head flex items-center justify-between h-40 border-b-2">
 		<div class="font-bold text-2xl"><span>🧑‍  </span>T.Lam-CPU</div>
-		<div class="hover:text-sky-600 cursor-pointer"><span>📮 </span>Email me</div>
+		<div class="hover:text-sky-600 cursor-pointer"><span>📮 </span><a href="mailto:lam.tran.113520@gmail.com" target="_top">Email me</a></div>
 	</header>
+
+	<!-- drawer init and show -->
+	<div id="menu-scroll" class="fixed d-block sm:hidden  w-full text-right bg-gray-100 px-5">
+	   <button class="inline-flex p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+		   <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+	          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+	      </svg>
+	   </button>
+	</div>
+
 	<section class="doc-container flex flex-col sm:flex-row">
-		<div class="w-4/12 h-screen border-r-2">
-			<div class="side-bar pt-12 px-7 float-end">	
+		<!-- left -->
+		<div class="sm:block hidden w-4/12 left-content border-r-2">
+			<div id="side-bar" class="pt-12 px-7 float-end">	
 				<div>
-					<a class="sub-btn uppercase font-bold text-2xl">📁 ABOUT ME <i class="drop-down float-end fa fa-angle-left mx-3"></i></a>
+					<a class="sub-btn uppercase font-bold text-2xl">📁 ABOUT ME <i class="drop-down rotate float-end fa fa-angle-left mx-3"></i></a>
 					<div class="pt-4 pl-7 sub-menu">
 						<div class="antialiased">
 						<i class="fa fa-birthday-cake me-2"></i>   22-11-1996</div>
@@ -33,29 +46,103 @@
 				<hr class="hr"/>
 
 				<div>
-					<a class="sub-btn uppercase font-bold text-2xl">📁 Đề tài <i class="drop-down float-end fa fa-angle-left mx-3"></i></a>
+					<a class="sub-btn uppercase font-bold text-2xl">📁 product <i class="drop-down float-end rotate fa fa-angle-left mx-3"></i></a>
 					<div class="pt-4 pl-7 sub-menu">
 						<div class="antialiased">
-						<i class="fa fa-birthday-cake me-2"></i>   22-11-1996</div>
+						  sadsađâsd</div>
 
 						<div class="antialiased">
-						<i class="fa fa-map-marker me-2"></i>  Phường </div>
+						sadsadsda </div>
 						
 						
 					</div>
 				</div>
 
 				<hr class="hr"/>
-			</div>
-			</div>
-			
+
+				
+
+
+			</div>		
 		</div>
-		<main class="w-8/12">
-			<div class="pt-12 px-7 float-start">
-				<p>👋 xin chào!</p>
+		<!-- right -->
+		<main id="main-content" class="right-content w-screen sm:w-8/12">
+			<div class="pt-12 px-[45px] float-start w-full">
+				<h3 class="title">👋 Hi there!</h3>
+				<div class="pb-9">
+					sadsadadad
+				</div>
+				<div class="h-28 text-center border-l-[5px] border-zinc-950 py-9 bg-zinc-200">
+					<img class="bg-img" src="img/bg.gif">
+					<h2 class="mark">Your success is my success.</h2>
+				</div>
+				<div class="image">
+					<span class="helper">
+						<img src="data:image/jpeg;base64,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" alt="avatar">
+					</span>
+				</div>
+				<hr class="my-8"/>
+
+				<h3 class="title">🎓 Education</h3>
+				<ul class="list-disc">
+					<li class="ms-8">
+						<h4 class="content">Software Engineer</h4>
+						<p class="italic">vinh long University of Technology Education | 2019 – Present</p>
+					</li>
+				</ul>
+				<hr class="my-8"/>
+
+				<h3 class="title">🤹🏼 Technical skills</h3>
+				<ul class="list-disc">
+					<li class="ms-8">
+						<h4 class="content">Design Skill</h4>
+						<p class="italic">vinh long University of Technology Education</p>
+					</li>
+				</ul>
 			</div>
 		</main>
 	</section>
+
+	
+
+	<!-- drawer component -->
+	<div id="drawer-navigation" class="fixed pt-[160px] top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+	   
+	  <div class="py-4 overflow-y-auto">
+	  	<button id="btn-close" type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+		</button>
+	    <div>
+			<a class="sub-btn uppercase font-bold text-2xl">📁 ABOUT ME <i class="drop-down rotate float-end fa fa-angle-left mx-3"></i></a>
+			<div class="pt-4 pl-7 sub-menu">
+				<div class="antialiased">
+				<i class="fa fa-birthday-cake me-2"></i>   22-11-1996</div>
+
+				<div class="antialiased">
+				<i class="fa fa-map-marker me-2"></i>  Phường 3, Tp. Vĩnh Long, Vĩnh Long</div>
+				
+				
+			</div>		
+		</div>
+
+		<hr class="hr"/>
+
+		<div>
+			<a class="sub-btn uppercase font-bold text-2xl">📁 product <i class="drop-down float-end rotate fa fa-angle-left mx-3"></i></a>
+			<div class="pt-4 pl-7 sub-menu">
+				<div class="antialiased">
+				  sadsađâsd</div>
+
+				<div class="antialiased">
+				sadsadsda </div>
+				
+				
+			</div>
+		</div>
+
+		<hr class="hr"/>
+	
+	   </div>
+	</div>
 </body>
 <script type="text/javascript">
 	 $(document).ready(function() {
@@ -65,8 +152,12 @@
 
 	            if(scrollPosition>0){
 	            	$('.head').addClass('head-scroll')
+	            	$('#side-bar').addClass('side-bar')
+	            	$('#menu-scroll').addClass('menu-scroll')
 	            }else{
 	            	$('.head').removeClass('head-scroll')
+	            	$('#side-bar').removeClass('side-bar')
+	            	$('#menu-scroll').removeClass('menu-scroll')
 	            }
 	        }
 
@@ -87,5 +178,32 @@
 
         });
     })
+</script>
+
+<script type="text/javascript">
+	$(window).on('resize', function(){
+    var win = $(this); //this = window
+   
+    if (win.width() >= 640) {
+
+    	$("#btn-close").click()
+    }
+});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		const htmlFilePath = "./view/test.html";
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    $("#main-content").html(xhr.responseText)
+                }
+            };
+        xhr.open("GET", htmlFilePath, true);
+        xhr.send();
+		
+	})
+	
 </script>
 </html>
