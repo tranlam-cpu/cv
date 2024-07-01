@@ -1,0 +1,91 @@
+
+
+<section class="px-[45px] py-[45px]">
+    <h1 class="text-5xl font-bold">Laundry </h1>
+    <div class="my-5">
+        <div class="owl-carousel owl-theme">         
+            <img class="owl-lazy" data-src="./img/laundry0.png" alt="">
+            <img class="owl-lazy" data-src="./img/laundry1.png" alt="">
+            <img class="owl-lazy" data-src="./img/laundry2.png" alt="">
+            <img class="owl-lazy" data-src="./img/laundry3.png" alt="">
+      
+        </div>
+    </div>
+    
+    <!-- overview -->
+    <div>
+        <h2 class="text-2xl font-bold">
+            Overview
+        </h2>
+        <p class="pt-3">
+            Our laundry service website offers convenient and reliable cleaning solutions for your clothes. With easy online booking, fast turnaround times, and quality care, we ensure your garments look their best. Choose from a variety of services, including washing, drying, and folding, all tailored to fit your needs.        </p>
+    </div>
+
+    <div class="mt-5">
+        <h2 class="text-2xl font-bold">
+            Tool
+        </h2>
+        <div class="pt-3 ticker-main">
+            <div class="ticker flex flex-row justify-between">
+                
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIMeSKtYIscDC7a7fN_57kXBe1bz6Cj19uzQ&s" width="50px" height="50px"></div>
+                    <div class="ps-2">NextJS</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://pbs.twimg.com/profile_images/1370357699372810243/94fjvw_p_400x400.png" width="50px" height="50px"></div>
+                    <div class="ps-2">NextAuth</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://techvccloud.mediacdn.vn/2020/9/17/mysql-1-1600340047538868003500-crop-160034079526453914971.png" width="50px" height="50px"></div>
+                    <div class="ps-2">MySql</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSR4sWGfuHCmHvYGFZVQvgRWI1CGQMSVVN2g&s" width="50px" height="50px"></div>
+                    <div class="ps-2">AWS</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://i.pinimg.com/originals/39/b2/e4/39b2e4ad77c23a2c11e5950a7dfa2aec.png" width="50px" height="50px"></div>
+                    <div class="ps-2">Prisma</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png" width="50px" height="50px"></div>
+                    <div class="ps-2">Docker</div>
+                </div>
+            </div>       
+        </div>         
+    </div>
+
+    <!-- infomation -->
+    <div class="mt-5">
+        <h2 class="text-2xl font-bold">
+            Information
+        </h2>
+        <div class="pt-3 ps-3">
+            <ul style="list-style-type:square">
+                <li>AWS : with AWS services like S3 for images.</li>
+                <li>Implementing authentication and authorization seamlessly with NextAuth.</li>
+                <li>Docker: Containerizing Next.js applications.</li>
+                <li>Using PrimeReact for Dashboard.</li>
+                <li>Global State Management with Redux.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <button class="bg-black hover:bg-slate-600 text-white px-3 py-2 rounded-md"><a href="https://giatui.vercel.app/" target="_blank" >Link to Webiste</a></button>
+    </div>
+</section>
+
+<script src="./src/myscript.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            lazyLoad:true,
+            loop:true,
+            margin:10,
+            autoHeight:true
+        });
+    });
+</script>

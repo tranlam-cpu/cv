@@ -1,0 +1,83 @@
+
+
+<section class="px-[45px] py-[45px]">
+    <h1 class="text-5xl font-bold">E-commerce </h1>
+    <div class="my-5">
+        <div class="owl-carousel owl-theme">         
+            <img class="owl-lazy" data-src="./img/ocms0.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms1.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms2.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms3.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms4.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms5.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms6.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms7.png" alt="">
+            <img class="owl-lazy" data-src="./img/ocms8.png" alt="">
+        </div>
+    </div>
+    
+    <!-- overview -->
+    <div>
+        <h2 class="text-2xl font-bold">
+            Overview
+        </h2>
+        <p class="pt-3">
+            Our e-commerce website offers a convenient and secure online shopping experience. Customers can explore a wide range of products, from clothing and electronics to home goods. With an easy-to-use interface, you can quickly find and purchase your favorite items. Additionally, users can register to sell their products, reaching a larger audience.
+        </p>
+    </div>
+
+    <div class="mt-5">
+        <h2 class="text-2xl font-bold">
+            Tool
+        </h2>
+        <div class="pt-3 ticker-main">
+            <div class="ticker flex flex-row justify-center">
+                
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://2.bp.blogspot.com/-Qj6BGHHzn8A/Wh4rN4LdQlI/AAAAAAAADwI/8lbUMXw1jQcM6_MQTgmjWL6QPWTzsAbsACLcBGAs/s1600/logo-jquery.gif" width="50px" height="50px"></div>
+                    <div class="ps-2">JQuery</div>
+                </div>
+                <div class="mx-10 px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://yt3.googleusercontent.com/ytc/AIf8zZT5eznOL6FWmmahK8GbWxyi-I0_4m9dwYqm9IEP=s900-c-k-c0x00ffffff-no-rj" width="50px" height="50px"></div>
+                    <div class="ps-2">October CMS</div>
+                </div>
+                <div class="px-2 py-2 border rounded-md bg-slate-100 flex flex-row items-center">
+                    <div><img src="https://techvccloud.mediacdn.vn/2020/9/17/mysql-1-1600340047538868003500-crop-160034079526453914971.png" width="50px" height="50px"></div>
+                    <div class="ps-2">MySql</div>
+                </div>
+            </div>       
+        </div>         
+    </div>
+
+    <!-- infomation -->
+    <div class="mt-5">
+        <h2 class="text-2xl font-bold">
+            Information
+        </h2>
+        <div class="pt-3 ps-3">
+            <ul style="list-style-type:square">
+                <li>Architecture: MVC (Model-View-Controller).</li>
+                <li>Data Management with  DataTables for interactive table displays and Select2 for enhanced dropdown selections.</li>
+                <li>Authorization and Authentication.</li>
+                <li>CMS: Built with October CMS, leveraging its powerful plugins for easy customization and scalability.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <button class="bg-black hover:bg-slate-600 text-white px-3 py-2 rounded-md"><a href="#" >Link to Webiste</a></button>
+    </div>
+</section>
+
+<script src="./src/myscript.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            lazyLoad:true,
+            loop:true,
+            margin:10,
+            autoHeight:true
+        });
+    });
+</script>
